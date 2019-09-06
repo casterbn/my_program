@@ -1,0 +1,133 @@
+python -m pip install pyserial
+python -m pip install --upgrade pip
+ python -m pip install --upgrade pip -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+
+
+变量名
+描述
+PYTHONPATH
+PYTHONPATH是Python搜索路径，默认我们import的模块都会从PYTHONPATH里面寻找。
+PYTHONSTARTUP 
+Python启动后，先寻找PYTHONSTARTUP环境变量，然后执行此变量指定的文件中的代码。
+PYTHONCASEOK 
+加入PYTHONCASEOK的环境变量, 就会使python导入模块的时候不区分大小写.
+PYTHONHOME 
+另一种模块搜索路径。它通常内嵌于的PYTHONSTARTUP或PYTHONPATH目录中，使得两个模块库更容易切换。
+
+
+
+Python 标识符
+在 Python 里，标识符由字母、数字、下划线组成。
+在 Python 中，所有标识符可以包括英文、数字以及下划线(_)，但不能以数字开头。
+Python 中的标识符是区分大小写的。
+以下划线开头的标识符是有特殊意义的。以单下划线开头 _foo 的代表不能直接访问的类属性，需通过类提供的接口进行访问，不能用 from xxx import * 而导入。
+以双下划线开头的 __foo 代表类的私有成员，以双下划线开头和结尾的 __foo__ 代表 Python 里特殊方法专用的标识，如 __init__() 代表类的构造函数。
+
+
+
+python 中多行注释使用三个单引号(''')或三个双引号(""")。
+
+print u"中文测试!"
+
+像if、while、def和class这样的复合语句，首行以关键字开始，以冒号( : )结束，该行之后的一行或多行代码构成代码组。
+
+
+Python有五个标准的数据类型：
+Numbers（数字）
+String（字符串）
+List（列表）
+Tuple（元组）
+Dictionary（字典）
+
+元组用 () 标识。内部元素用逗号隔开。但是元组不能二次赋值，相当于只读列表。
+
+
+int(x [,base])
+将x转换为一个整数
+long(x [,base] )
+将x转换为一个长整数
+float(x)
+将x转换到一个浮点数
+complex(real [,imag])
+创建一个复数
+str(x)
+将对象 x 转换为字符串
+repr(x)
+将对象 x 转换为表达式字符串
+eval(str)
+用来计算在字符串中的有效Python表达式,并返回一个对象
+tuple(s)
+将序列 s 转换为一个元组
+list(s)
+将序列 s 转换为一个列表
+set(s)
+转换为可变集合
+dict(d)
+创建一个字典。d 必须是一个序列 (key,value)元组。
+frozenset(s)
+转换为不可变集合
+chr(x)
+将一个整数转换为一个字符
+unichr(x)
+将一个整数转换为Unicode字符
+ord(x)
+将一个字符转换为它的整数值
+hex(x)
+将一个整数转换为一个十六进制字符串
+oct(x)
+将一个整数转换为一个八进制字符串
+
+
+
+
+
+
+
+逻辑运算符
+and
+x and y
+布尔"与" - 如果 x 为 False，x and y 返回 False，否则它返回 y 的计算值。 
+(a and b) 返回 20。
+or
+x or y
+布尔"或" - 如果 x 是非 0，它返回 x 的值，否则它返回 y 的计算值。
+(a or b) 返回 10。
+not
+not x
+布尔"非" - 如果 x 为 True，返回 False 。如果 x 为 False，它返回 True。
+not(a and b) 返回 False 
+
+is 与 == 区别：
+is 用于判断两个变量引用对象是否为同一个(同一块内存空间)， == 用于判断引用变量的值是否相等。
+
+
+for循环可以用元素索引或者元素下标索引
+
+pass占位
+
+
+数据类型是不允许改变的,这就意味着如果改变 Number 数据类型的值，将重新分配内存空间。
+
+格式化字符串 ： print "My name is %s and weight is %d kg!" % ('Zara', 21)
+
+
+注意函数值传递还是引用传递
+必备参数 关键字参数 默认参数 不定长参数
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+ 
+# 可写函数说明
+def printinfo( arg1, *vartuple ):
+   "打印任何传入的参数"
+   print "输出: "
+   print arg1
+   for var in vartuple:
+      print var
+   return;
+ 
+# 调用printinfo 函数
+printinfo( 10 );
+printinfo( 70, 60, 50 );
+匿名函数
+
+__init__.py 用于标识当前文件夹是一个包

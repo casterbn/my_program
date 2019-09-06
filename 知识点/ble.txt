@@ -1,0 +1,24 @@
+ESP32最终运行在btc_task任务中	btc_init		esp_bluedroid_init		主工程main函数 
+
+
+Attribute handle,Attribute句柄，16-bit长度，Client 访问Server的Attribute，都是通过这个句柄来访问的，也就是说ATT PDU一般都包含handle的值，用户在软件代码添加characteristic 的时候，系统自动按顺序为相关attribute生成句柄
+
+server提供数据，而数据是由attribute来表达，所有attribute组成一个attribute table,支持该服务不同，attribute talbe就不同，
+
+ Client和Server之间是通过ATT PDU来通信的，ATT PDU主要包括4类：读，写，notify和indicate。如果一个命令需要response，那么会在相应命令后面加上request；如果一个命令只需要ACK而不需要response，那么它的后面就不会带request。
+
+
+esp_ble_gatts_send_indicate(spp_gatts_if, spp_conn_id, spp_handle_table[SPP_IDX_SPP_STATUS_VAL],strlen("aceinna_ble_test\n"), (uint8_t*)"aceinna_ble_test\n", false);
+  
+spp_gatts_if   应用程序接口
+spp_conn_id	蓝牙连接ID
+spp_handle_table	特征值ID
+
+esp_ble_gatts_app_register() //注册应用程序
+
+
+
+
+gap_event_handler	 GAP层有4种不同类型的广播：通用的、定向的、不可连接的以及可发现的。
+gatts_profile_event_handler		GATT定义了两个角色：服务器和客户端。
+gatts_event_handler

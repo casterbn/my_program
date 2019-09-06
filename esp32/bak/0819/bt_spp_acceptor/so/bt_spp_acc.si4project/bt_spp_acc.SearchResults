@@ -1,0 +1,150 @@
+---- bt_write Matches (149 in 20 files) ----
+esp_bt_main(6123).c (bt_spp_acc.si4project\Backup) line 72 : static SemaphoreHandle_t bt_write_xSemaphore;        //写蓝牙锁
+esp_bt_main(6123).c (bt_spp_acc.si4project\Backup) line 85 : esp_spp_cb_param_t* bt_write_handle = NULL;
+esp_bt_main(6123).c (bt_spp_acc.si4project\Backup) line 94 : static void BT_write_task_crate();
+app_main in esp_bt_main(6123).c (bt_spp_acc.si4project\Backup) : 	BT_write_task_crate();
+esp_spp_cb in esp_bt_main(6123).c (bt_spp_acc.si4project\Backup) : 		//bt_write(param->srv_open.handle, sizeof(data_start),data_start);
+esp_spp_cb in esp_bt_main(6123).c (bt_spp_acc.si4project\Backup) :         //bt_write(param->srv_open.handle, param->data_ind.len, param->data_ind.data);
+esp_spp_cb in esp_bt_main(6123).c (bt_spp_acc.si4project\Backup) : 		//bt_write(param->srv_open.handle, sizeof(data_end),data_end);
+bt_wrtie_task in esp_bt_main(6123).c (bt_spp_acc.si4project\Backup) : 	//esp_spp_cb_param_t* bt_write_handle;
+bt_wrtie_task in esp_bt_main(6123).c (bt_spp_acc.si4project\Backup) : 		//esp_spp_write((bt_write_handle)->srv_open.handle, 7, data);
+bt_wrtie_task in esp_bt_main(6123).c (bt_spp_acc.si4project\Backup) : 		//bt_write(w_task_handle, sizeof(data), data);
+esp_bt_main(6123).c (bt_spp_acc.si4project\Backup) line 378 : static void BT_write_task_crate()
+uart_receive_task in esp_bt_main(6123).c (bt_spp_acc.si4project\Backup) : 			bt_write(Write_handle, len, uart_data);
+mutex_init in esp_bt_main(6123).c (bt_spp_acc.si4project\Backup) : 	bt_write_xSemaphore = xSemaphoreCreateBinary();	 
+mutex_init in esp_bt_main(6123).c (bt_spp_acc.si4project\Backup) : 	if( bt_write_xSemaphore == NULL )   
+mutex_init in esp_bt_main(6123).c (bt_spp_acc.si4project\Backup) :     	Dbgprintf("crate bt_write_xSemaphore suc\n");   
+mutex_init in esp_bt_main(6123).c (bt_spp_acc.si4project\Backup) : 		xSemaphoreGive(bt_write_xSemaphore);
+take_bt_mutex in esp_bt_main(6123).c (bt_spp_acc.si4project\Backup) : 	xSemaphoreTake(bt_write_xSemaphore,portMAX_DELAY);
+release_bt_mutex in esp_bt_main(6123).c (bt_spp_acc.si4project\Backup) : 	xSemaphoreGive(bt_write_xSemaphore);
+esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main) line 72 : static SemaphoreHandle_t bt_write_xSemaphore;        //写蓝牙锁
+esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main) line 85 : esp_spp_cb_param_t* bt_write_handle = NULL;
+esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main) line 94 : static void BT_write_task_crate();
+app_main in esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main) : 	BT_write_task_crate();
+esp_spp_cb in esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main) : 		//bt_write(param->srv_open.handle, sizeof(data_start),data_start);
+esp_spp_cb in esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main) :         //bt_write(param->srv_open.handle, param->data_ind.len, param->data_ind.data);
+esp_spp_cb in esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main) : 		//bt_write(param->srv_open.handle, sizeof(data_end),data_end);
+bt_wrtie_task in esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main) : 	//esp_spp_cb_param_t* bt_write_handle;
+bt_wrtie_task in esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main) : 		//esp_spp_write((bt_write_handle)->srv_open.handle, 7, data);
+bt_wrtie_task in esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main) : 		//bt_write(w_task_handle, sizeof(data), data);
+esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main) line 378 : static void BT_write_task_crate()
+uart_receive_task in esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main) : 			bt_write(Write_handle, len, uart_data);
+mutex_init in esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main) : 	bt_write_xSemaphore = xSemaphoreCreateBinary();	 
+mutex_init in esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main) : 	if( bt_write_xSemaphore == NULL )   
+mutex_init in esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main) :     	Dbgprintf("crate bt_write_xSemaphore suc\n");   
+mutex_init in esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main) : 		xSemaphoreGive(bt_write_xSemaphore);
+take_bt_mutex in esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main) : 	xSemaphoreTake(bt_write_xSemaphore,portMAX_DELAY);
+release_bt_mutex in esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main) : 	xSemaphoreGive(bt_write_xSemaphore);
+esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main\bak) line 72 : static SemaphoreHandle_t bt_write_xSemaphore;        //写蓝牙锁
+esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main\bak) line 85 : esp_spp_cb_param_t* bt_write_handle = NULL;
+esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main\bak) line 94 : static void BT_write_task_crate();
+app_main in esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main\bak) : 	BT_write_task_crate();
+esp_spp_cb in esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main\bak) : 		bt_write(param->srv_open.handle, sizeof(data_start),data_start);
+esp_spp_cb in esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main\bak) :         bt_write(param->srv_open.handle, param->data_ind.len, param->data_ind.data);
+esp_spp_cb in esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main\bak) : 		bt_write(param->srv_open.handle, sizeof(data_end),data_end);
+bt_wrtie_task in esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main\bak) : 	//esp_spp_cb_param_t* bt_write_handle;
+bt_wrtie_task in esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main\bak) : 		//esp_spp_write((bt_write_handle)->srv_open.handle, 7, data);
+bt_wrtie_task in esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main\bak) : 		//bt_write(w_task_handle, sizeof(data), data);
+esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main\bak) line 379 : static void BT_write_task_crate()
+uart_receive_task in esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main\bak) : 			bt_write(Write_handle, len, uart_data);
+mutex_init in esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main\bak) : 	bt_write_xSemaphore = xSemaphoreCreateBinary();	 
+mutex_init in esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main\bak) : 	if( bt_write_xSemaphore == NULL )   
+mutex_init in esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main\bak) :     	Dbgprintf("crate bt_write_xSemaphore suc\n");   
+mutex_init in esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main\bak) : 		xSemaphoreGive(bt_write_xSemaphore);
+take_bt_mutex in esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main\bak) : 	xSemaphoreTake(bt_write_xSemaphore,portMAX_DELAY);
+release_bt_mutex in esp_bt_main.c (C:\esp32\bluetooth\bt_spp_acceptor\main\bak) : 	xSemaphoreGive(bt_write_xSemaphore);
+example_spp_acceptor_demo(3264).c (bt_spp_acc.si4project\Backup) line 68 : static SemaphoreHandle_t bt_write_xSemaphore;        //写蓝牙锁
+example_spp_acceptor_demo(3264).c (bt_spp_acc.si4project\Backup) line 81 : esp_spp_cb_param_t* bt_write_handle = NULL;
+example_spp_acceptor_demo(3264).c (bt_spp_acc.si4project\Backup) line 89 : static void BT_write_task_crate();
+app_main in example_spp_acceptor_demo(3264).c (bt_spp_acc.si4project\Backup) : 	BT_write_task_crate();
+esp_spp_cb in example_spp_acceptor_demo(3264).c (bt_spp_acc.si4project\Backup) : 		bt_write(param->srv_open.handle, sizeof(data_start),data_start);
+esp_spp_cb in example_spp_acceptor_demo(3264).c (bt_spp_acc.si4project\Backup) :         bt_write(param->srv_open.handle, param->data_ind.len, param->data_ind.data);
+esp_spp_cb in example_spp_acceptor_demo(3264).c (bt_spp_acc.si4project\Backup) : 		bt_write(param->srv_open.handle, sizeof(data_end),data_end);
+bt_wrtie_task in example_spp_acceptor_demo(3264).c (bt_spp_acc.si4project\Backup) : 	//esp_spp_cb_param_t* bt_write_handle;
+bt_wrtie_task in example_spp_acceptor_demo(3264).c (bt_spp_acc.si4project\Backup) : 		//esp_spp_write((bt_write_handle)->srv_open.handle, 7, data);
+bt_wrtie_task in example_spp_acceptor_demo(3264).c (bt_spp_acc.si4project\Backup) : 		bt_write(w_task_handle, sizeof(data), data);
+example_spp_acceptor_demo(3264).c (bt_spp_acc.si4project\Backup) line 376 : static void BT_write_task_crate()
+uart_receive_task in example_spp_acceptor_demo(3264).c (bt_spp_acc.si4project\Backup) : 			bt_write(Write_handle, len, uart_data);
+mutex_init in example_spp_acceptor_demo(3264).c (bt_spp_acc.si4project\Backup) : 	bt_write_xSemaphore = xSemaphoreCreateBinary();	 
+mutex_init in example_spp_acceptor_demo(3264).c (bt_spp_acc.si4project\Backup) : 	if( bt_write_xSemaphore == NULL )   
+mutex_init in example_spp_acceptor_demo(3264).c (bt_spp_acc.si4project\Backup) :     	Dbgprintf("crate bt_write_xSemaphore suc\n");   
+mutex_init in example_spp_acceptor_demo(3264).c (bt_spp_acc.si4project\Backup) : 		xSemaphoreGive(bt_write_xSemaphore);
+take_bt_mutex in example_spp_acceptor_demo(3264).c (bt_spp_acc.si4project\Backup) : 	xSemaphoreTake(bt_write_xSemaphore,portMAX_DELAY);
+release_bt_mutex in example_spp_acceptor_demo(3264).c (bt_spp_acc.si4project\Backup) : 	xSemaphoreGive(bt_write_xSemaphore);
+example_spp_acceptor_demo(3311).c (bt_spp_acc.si4project\Backup) line 67 : static void BT_write_task_crate();
+example_spp_acceptor_demo(3311).c (bt_spp_acc.si4project\Backup) line 91 : esp_spp_cb_param_t* bt_write_handle = NULL;
+esp_spp_cb in example_spp_acceptor_demo(3311).c (bt_spp_acc.si4project\Backup) :         bt_write(param->srv_open.handle, param->data_ind.len, param->data_ind.data);
+app_main in example_spp_acceptor_demo(3311).c (bt_spp_acc.si4project\Backup) : 	BT_write_task_crate();
+bt_wrtie_task in example_spp_acceptor_demo(3311).c (bt_spp_acc.si4project\Backup) : 	//esp_spp_cb_param_t* bt_write_handle;
+bt_wrtie_task in example_spp_acceptor_demo(3311).c (bt_spp_acc.si4project\Backup) : 		//esp_spp_write((bt_write_handle)->srv_open.handle, 7, data);
+bt_wrtie_task in example_spp_acceptor_demo(3311).c (bt_spp_acc.si4project\Backup) : 		bt_write(w_task_handle, 5, data);
+example_spp_acceptor_demo(3311).c (bt_spp_acc.si4project\Backup) line 369 : static void BT_write_task_crate()
+uart_task in example_spp_acceptor_demo(3311).c (bt_spp_acc.si4project\Backup) : 		bt_write(Write_handle, len, uart_data);
+uart_receive_task in example_spp_acceptor_demo(3311).c (bt_spp_acc.si4project\Backup) : 			bt_write(Write_handle, len, uart_data);
+example_spp_acceptor_demo(396).c (bt_spp_acc.si4project\Backup) line 67 : static void BT_write_task_crate();
+example_spp_acceptor_demo(396).c (bt_spp_acc.si4project\Backup) line 86 : esp_spp_cb_param_t* bt_write_handle = NULL;
+esp_spp_cb in example_spp_acceptor_demo(396).c (bt_spp_acc.si4project\Backup) :         bt_write(param->srv_open.handle, param->data_ind.len, param->data_ind.data);
+app_main in example_spp_acceptor_demo(396).c (bt_spp_acc.si4project\Backup) : 	BT_write_task_crate();
+bt_wrtie_task in example_spp_acceptor_demo(396).c (bt_spp_acc.si4project\Backup) : 	//esp_spp_cb_param_t* bt_write_handle;
+bt_wrtie_task in example_spp_acceptor_demo(396).c (bt_spp_acc.si4project\Backup) : 		//esp_spp_write((bt_write_handle)->srv_open.handle, 7, data);
+bt_wrtie_task in example_spp_acceptor_demo(396).c (bt_spp_acc.si4project\Backup) : 		bt_write(w_task_handle, 5, data);
+example_spp_acceptor_demo(396).c (bt_spp_acc.si4project\Backup) line 353 : static void BT_write_task_crate()
+uart_receive_task in example_spp_acceptor_demo(396).c (bt_spp_acc.si4project\Backup) : 			bt_write(Write_handle, len, uart_data);
+example_spp_acceptor_demo(5678).c (bt_spp_acc.si4project\Backup) line 68 : static SemaphoreHandle_t bt_write_xSemaphore;        //写蓝牙锁
+example_spp_acceptor_demo(5678).c (bt_spp_acc.si4project\Backup) line 81 : esp_spp_cb_param_t* bt_write_handle = NULL;
+example_spp_acceptor_demo(5678).c (bt_spp_acc.si4project\Backup) line 89 : static void BT_write_task_crate();
+app_main in example_spp_acceptor_demo(5678).c (bt_spp_acc.si4project\Backup) : 	BT_write_task_crate();
+esp_spp_cb in example_spp_acceptor_demo(5678).c (bt_spp_acc.si4project\Backup) : 		bt_write(param->srv_open.handle, sizeof(data_start),data_start);
+esp_spp_cb in example_spp_acceptor_demo(5678).c (bt_spp_acc.si4project\Backup) :         bt_write(param->srv_open.handle, param->data_ind.len, param->data_ind.data);
+esp_spp_cb in example_spp_acceptor_demo(5678).c (bt_spp_acc.si4project\Backup) : 		bt_write(param->srv_open.handle, sizeof(data_end),data_end);
+bt_wrtie_task in example_spp_acceptor_demo(5678).c (bt_spp_acc.si4project\Backup) : 	//esp_spp_cb_param_t* bt_write_handle;
+bt_wrtie_task in example_spp_acceptor_demo(5678).c (bt_spp_acc.si4project\Backup) : 		//esp_spp_write((bt_write_handle)->srv_open.handle, 7, data);
+bt_wrtie_task in example_spp_acceptor_demo(5678).c (bt_spp_acc.si4project\Backup) : 		//bt_write(w_task_handle, sizeof(data), data);
+example_spp_acceptor_demo(5678).c (bt_spp_acc.si4project\Backup) line 376 : static void BT_write_task_crate()
+uart_receive_task in example_spp_acceptor_demo(5678).c (bt_spp_acc.si4project\Backup) : 			bt_write(Write_handle, len, uart_data);
+mutex_init in example_spp_acceptor_demo(5678).c (bt_spp_acc.si4project\Backup) : 	bt_write_xSemaphore = xSemaphoreCreateBinary();	 
+mutex_init in example_spp_acceptor_demo(5678).c (bt_spp_acc.si4project\Backup) : 	if( bt_write_xSemaphore == NULL )   
+mutex_init in example_spp_acceptor_demo(5678).c (bt_spp_acc.si4project\Backup) :     	Dbgprintf("crate bt_write_xSemaphore suc\n");   
+mutex_init in example_spp_acceptor_demo(5678).c (bt_spp_acc.si4project\Backup) : 		xSemaphoreGive(bt_write_xSemaphore);
+take_bt_mutex in example_spp_acceptor_demo(5678).c (bt_spp_acc.si4project\Backup) : 	xSemaphoreTake(bt_write_xSemaphore,portMAX_DELAY);
+release_bt_mutex in example_spp_acceptor_demo(5678).c (bt_spp_acc.si4project\Backup) : 	xSemaphoreGive(bt_write_xSemaphore);
+example_spp_acceptor_demo(6531).c (bt_spp_acc.si4project\Backup) line 67 : static void BT_write_task_crate();
+example_spp_acceptor_demo(6531).c (bt_spp_acc.si4project\Backup) line 91 : esp_spp_cb_param_t* bt_write_handle = NULL;
+esp_spp_cb in example_spp_acceptor_demo(6531).c (bt_spp_acc.si4project\Backup) :         bt_write(param->srv_open.handle, param->data_ind.len, param->data_ind.data);
+app_main in example_spp_acceptor_demo(6531).c (bt_spp_acc.si4project\Backup) : 	BT_write_task_crate();
+bt_wrtie_task in example_spp_acceptor_demo(6531).c (bt_spp_acc.si4project\Backup) : 	//esp_spp_cb_param_t* bt_write_handle;
+bt_wrtie_task in example_spp_acceptor_demo(6531).c (bt_spp_acc.si4project\Backup) : 		//esp_spp_write((bt_write_handle)->srv_open.handle, 7, data);
+bt_wrtie_task in example_spp_acceptor_demo(6531).c (bt_spp_acc.si4project\Backup) : 		bt_write(w_task_handle, 5, data);
+example_spp_acceptor_demo(6531).c (bt_spp_acc.si4project\Backup) line 369 : static void BT_write_task_crate()
+uart_task in example_spp_acceptor_demo(6531).c (bt_spp_acc.si4project\Backup) : 		bt_write(Write_handle, len, uart_data);
+uart_receive_task in example_spp_acceptor_demo(6531).c (bt_spp_acc.si4project\Backup) : 			bt_write(Write_handle, len, uart_data);
+example_spp_acceptor_demo(6548).c (bt_spp_acc.si4project\Backup) line 67 : static void BT_write_task_crate();
+example_spp_acceptor_demo(6548).c (bt_spp_acc.si4project\Backup) line 91 : esp_spp_cb_param_t* bt_write_handle = NULL;
+esp_spp_cb in example_spp_acceptor_demo(6548).c (bt_spp_acc.si4project\Backup) :         bt_write(param->srv_open.handle, param->data_ind.len, param->data_ind.data);
+app_main in example_spp_acceptor_demo(6548).c (bt_spp_acc.si4project\Backup) : 	BT_write_task_crate();
+bt_wrtie_task in example_spp_acceptor_demo(6548).c (bt_spp_acc.si4project\Backup) : 	//esp_spp_cb_param_t* bt_write_handle;
+bt_wrtie_task in example_spp_acceptor_demo(6548).c (bt_spp_acc.si4project\Backup) : 		//esp_spp_write((bt_write_handle)->srv_open.handle, 7, data);
+bt_wrtie_task in example_spp_acceptor_demo(6548).c (bt_spp_acc.si4project\Backup) : 		bt_write(w_task_handle, 5, data);
+example_spp_acceptor_demo(6548).c (bt_spp_acc.si4project\Backup) line 367 : static void BT_write_task_crate()
+uart_task in example_spp_acceptor_demo(6548).c (bt_spp_acc.si4project\Backup) : 		bt_write(Write_handle, len, uart_data);
+uart_receive_task in example_spp_acceptor_demo(6548).c (bt_spp_acc.si4project\Backup) : 			bt_write(Write_handle, len, uart_data);
+example_spp_acceptor_demo(7712).c (bt_spp_acc.si4project\Backup) line 67 : static void BT_write_task_crate();
+example_spp_acceptor_demo(7712).c (bt_spp_acc.si4project\Backup) line 91 : esp_spp_cb_param_t* bt_write_handle = NULL;
+esp_spp_cb in example_spp_acceptor_demo(7712).c (bt_spp_acc.si4project\Backup) :         bt_write(param->srv_open.handle, param->data_ind.len, param->data_ind.data);
+app_main in example_spp_acceptor_demo(7712).c (bt_spp_acc.si4project\Backup) : 	BT_write_task_crate();
+bt_wrtie_task in example_spp_acceptor_demo(7712).c (bt_spp_acc.si4project\Backup) : 	//esp_spp_cb_param_t* bt_write_handle;
+bt_wrtie_task in example_spp_acceptor_demo(7712).c (bt_spp_acc.si4project\Backup) : 		//esp_spp_write((bt_write_handle)->srv_open.handle, 7, data);
+bt_wrtie_task in example_spp_acceptor_demo(7712).c (bt_spp_acc.si4project\Backup) : 		bt_write(w_task_handle, 5, data);
+example_spp_acceptor_demo(7712).c (bt_spp_acc.si4project\Backup) line 368 : static void BT_write_task_crate()
+uart_task in example_spp_acceptor_demo(7712).c (bt_spp_acc.si4project\Backup) : 		bt_write(Write_handle, len, uart_data);
+uart_receive_task in example_spp_acceptor_demo(7712).c (bt_spp_acc.si4project\Backup) : 			bt_write(Write_handle, len, uart_data);
+rtk_bt(2338).h (bt_spp_acc.si4project\Backup) line 47 : void bt_write(u32 handle,int len, unsigned char *p_data);
+rtk_bt(3305).h (bt_spp_acc.si4project\Backup) line 46 : void bt_write(u32 handle,int len, unsigned char *p_data);
+rtk_bt(3344).c (bt_spp_acc.si4project\Backup) line 28 : void bt_write(u32 handle,int len, unsigned char *p_data)
+rtk_bt(3893).c (bt_spp_acc.si4project\Backup) line 30 : void bt_write(u32 handle,int len, unsigned char *p_data)
+rtk_bt(5009).c (bt_spp_acc.si4project\Backup) line 31 : void bt_write(u32 handle,int len, unsigned char *p_data)
+rtk_bt(5066).c (bt_spp_acc.si4project\Backup) line 30 : void bt_write(u32 handle,int len, unsigned char *p_data)
+rtk_bt(5674).c (bt_spp_acc.si4project\Backup) line 32 : void bt_write(u32 handle,int len, unsigned char *p_data)
+rtk_bt(669).h (bt_spp_acc.si4project\Backup) line 49 : void bt_write(u32 handle,int len, unsigned char *p_data);
+rtk_bt.c (C:\esp32\bluetooth\bt_spp_acceptor\aceinna_app\src\bsp) line 32 : void bt_write(u32 handle,int len, unsigned char *p_data)
+rtk_bt.h (C:\esp32\bluetooth\bt_spp_acceptor\aceinna_app\inc\bsp) line 50 : void bt_write(u32 handle,int len, unsigned char *p_data);

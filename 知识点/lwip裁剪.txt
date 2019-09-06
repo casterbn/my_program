@@ -1,0 +1,9 @@
+#define MEM_SIZE               2048
+#define MEMP_NUM_UDP_PCB        2
+#define MEMP_NUM_TCP_PCB        10
+#define MEMP_NUM_TCP_SEG        5
+
+#define PBUF_POOL_BUFSIZE       256	
+#define LWIP_UDP                0 	//禁用UDP
+
+LWIP_SOCKET	//关闭socket通讯

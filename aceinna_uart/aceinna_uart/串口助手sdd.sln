@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aceinna_uart", "串口助手sdd\aceinna_uart.csproj", "{72B695A6-2F50-4E9A-8950-E47ED4B88A26}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72B695A6-2F50-4E9A-8950-E47ED4B88A26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72B695A6-2F50-4E9A-8950-E47ED4B88A26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72B695A6-2F50-4E9A-8950-E47ED4B88A26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72B695A6-2F50-4E9A-8950-E47ED4B88A26}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

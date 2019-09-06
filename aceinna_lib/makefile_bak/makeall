@@ -1,0 +1,45 @@
+CC=arm-none-eabi-gcc
+AR=arm-none-eabi-ar
+
+vpath %.o out
+
+CFLAGS += -MP
+CFLAGS += -MD
+CFLAGS += -DNRF52_PAN_58
+CFLAGS += -DNRF52_PAN_54
+CFLAGS += -DNRF52_PAN_31
+CFLAGS += -DNRF52_PAN_51
+CFLAGS += -D__HEAP_SIZE=0
+CFLAGS += -DCONFIG_GPIO_AS_PINRESET
+CFLAGS += -DBLE_STACK_SUPPORT_REQD
+CFLAGS += -DNRF52_PAN_15
+CFLAGS += -DNRF_SD_BLE_API_VERSION=3
+CFLAGS += -DSWI_DISABLE0 -DNRF52_PAN_20
+CFLAGS += -DNRF52_PAN_55
+CFLAGS += -DS132
+CFLAGS += -mcpu=cortex-m4
+CFLAGS += -mthumb -mabi=aapcs
+CFLAGS +=  -Wall -Werror -O3 -g3
+CFLAGS += -mfloat-abi=hard -mfpu=fpv4-sp-d16
+# keep every function in separate section, this allows linker to discard unused ones
+CFLAGS += -ffunction-sections -fdata-sections -fno-strict-aliasing
+CFLAGS += -fno-builtin --short-enums 
+
+OUT_DIR=out
+SRCS = tedacp.c
+
+OBJS = $(SRCS:.c=.o)
+
+.PHONY: tedacp_lib_v1.01.a
+
+all: tedacp_lib_v1.01.a
+
+%.o : %.c
+	mkdir -p $(OUT_DIR)
+	$(CC) $(CFLAGS) -c -o $(OUT_DIR)/$@ $^
+
+tedacp_lib_v1.01.a: $(OBJS)
+	$(AR) -r $(OUT_DIR)/$@ $(OUT_DIR)/*.o
+
+clean:
+	rm -rf $(OUT_DIR)

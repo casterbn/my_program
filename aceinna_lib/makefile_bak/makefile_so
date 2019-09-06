@@ -1,0 +1,83 @@
+Target = ./libhello_aceinna.so
+INC += -I./
+APPDIR=./
+AR = ar
+ARFLAGS = rcs
+LIBS = -lm  -lc 	#需要添加math库
+
+
+ifndef TG
+	TG=ARM
+	#TG=PC
+endif
+
+ifeq "$(TG)" "PC"
+CC = arm-linux-gnueabihf-gcc -std=c99
+CPP = arm-linux-gnueabihf-gcc -std=c99
+else
+CC = arm-none-eabi-gcc -std=c99
+CPP = arm-none-eabi-gcc  -std=c99
+endif
+
+
+ifndef CFG
+	CFG=Debug
+	#CFG=Release
+endif
+
+ifndef TEST
+	TEST=ENABLE
+	#CFG=Release
+endif
+
+ifeq "$(CFG)" "Debug"
+#CFLAGS += -w -o2
+CFLAGS +=  -MMD  -w
+else
+CFLAGS += -W
+CFLAGS += -o1
+endif
+
+OUTDIR = ./build
+COMPILE = @$(CC)  $(LIBS)  $(INC)  $(CFLAGS) -c $<   -o  $@#"$(OUTDIR)/$(*F).o"
+
+COMMON_OBJ=$(OUTDIR)/hello.o  
+#$(Target) : $(SRCS)
+#	gcc  -I $(INC) -o2 $(Target)   $(SRCS)  $(LIBS) -g
+
+OBJ=$(COMMON_OBJ)
+
+CDEF = $(OBJ:.o=.d)
+
+all: $(Target)
+
+$(OBJ):
+# Pattern rules
+
+
+
+$(OUTDIR)/%.o : $(APPDIR)/%.c
+	@echo ""
+	@echo "->>>>>>>> compile " $@
+	$(COMPILE)
+        
+
+LINK =	@$(CC)  $(OBJ) $(LIBS) $(INC) -shared -fPIC -o $(Target)
+
+
+
+# Build rules
+$(Target): $(OUTDIR)  $(OBJ)
+	$(LINK)
+#	cp $(Target) ./
+	@echo "->>>>>>>> gen " $(Target)
+ifeq "$(CFG)" "Debug"
+	@echo "Debug" 
+else
+	@echo "Release" 
+endif
+	@echo "+++++++++++++++++++++++++"
+	@echo "+++++++++++++++++++++++++"
+clean:            
+	rm $(Target) $(COMMON_OBJ) $(CDEF)
+

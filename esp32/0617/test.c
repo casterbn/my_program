@@ -1,0 +1,7 @@
+#include <stdio.h>
+const char* bt_trans_test = "bluetooth test\n";
+int main()
+{
+	printf("len = %d\n",sizeof(bt_trans_test));
+	printf("len = %d\n",strlen(bt_trans_test));
+}

@@ -1,0 +1,186 @@
+
+#Ignore thumbnails created by Windows
+Thumbs.db
+#Ignore files built by Visual Studio
+
+.pioenvs
+.vscode
+*.map
+**/*.o
+.vscode/c_cpp_properties.json
+.vscode/launch.json
+.vscode/*.db
+.vscode/.browse.c_cpp.db*
+.settings
+.cproject
+.project
+*.obj
+*.exe
+*.bin
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+[Bb]in
+[Dd]ebug*/
+*.lib
+*.sbr
+obj/
+[Rr]elease*/
+_ReSharper*/
+[Tt]est[Rr]esult*
+.vs/
+#Nuget packages folder
+packages/
+# Created by https://www.gitignore.io/api/keil
+# Edit at https://www.gitignore.io/?templates=keil
+
+### Keil ###
+# something maybe need to add
+# *.bat  # generate batch file
+# output/project_name # uv project generate without file ext
+# *.SRC # generate source file
+# *.src
+
+# Prerequisites
+*.d
+*.dep
+# Object files
+*.obj
+*.OBJ
+
+# Listing Files
+*.COD
+*.cod
+*.[Ii]
+*.LST
+*.lst
+*.MAP
+*.map
+*.[Mm]51
+*.[Mm]66
+*.SCR
+*.scr
+
+# LINK output
+*.ABS
+
+# Libraries
+*.lib
+*.LIB
+
+
+# uv output
+*.lnp
+*.build_log.htm
+*.HEX
+*.hex
+
+
+# Build Files
+*._IA
+*.__[Ii]
+*._[Ii][Ii]
+
+# project
+*.uvgui.*
+*.uvguix.*
+/OpenRtkBootload/MDK-ARM/OpenRtkBootLoad.uvguix.suncheng
+/OpenRtkBootload/MDK-ARM/JLinkLog.txt
+/OpenRtkBootload/MDK-ARM/JLinkLog.txt.orig
+/OpenRTK_IMU300/.pioenvs/.sconsign.dblite
+/OpenRTK_IMU300/.pioenvs/OpenRTK/firmware.bin
+/OpenRTK_IMU300/.pioenvs/OpenRTK/firmware.elf
+/OpenRTK_IMU300/.pioenvs/OpenRTK/src/main.o
+/OpenRTK_IMU300/.vscode/.BROWSE.C_CPP.DB
+/OpenRTK_IMU300/.vscode/.BROWSE.C_CPP.DB-shm
+/OpenRTK_IMU300/.vscode/.BROWSE.C_CPP.DB-wal
+/OpenRTK_IMU300/.pioenvs/OpenRTK/src/taskDataAcquisition.o
+/OpenRTK_IMU300/.pioenvs/OpenRTK/src/user/UserAlgorithm.o
+/OpenRTK_IMU300/.pioenvs/OpenRTK/src/user/UserConfiguration.o
+/OpenRTK_IMU300/.vscode/.BROWSE.C_CPP.DB
+/OpenRTK_IMU300/.vscode/c_cpp_properties.json
+/OpenRTK_IMU300/.gitignore~124f3882d76c5848c39bdd29d7139081d4ddece0
+/scripts/__*__
+/scripts/log_data/*.csv
+/scripts/*.swp
+/msvc/x.txt
+/msvc/ST_Pi_129t27.kml
+/msvc/ST_Pi_129t27.gga
+/msvc/ST_Pi_129t27.csv
+/msvc/ST_openrtk_129t27.kml
+/msvc/ST_openrtk_129t27.gga
+/msvc/ST_openrtk_129t27.csv
+/msvc/ST_EVK_129t28.kml
+/msvc/ST_EVK_129t28.gga
+/msvc/ST_EVK_129t28.csv
+/msvc/rtkave.out
+/msvc/rtk3.out
+/msvc/rtk.out
+/msvc/rtd.out
+/msvc/Px.txt
+/msvc/fixed1.out
+/msvc/fixed.out
+/msvc/130
+/msvc/COM54_190510_184925_kml.kml
+/msvc/COM54_190510_184925_gga.gga
+/msvc/COM54_190510_184925_gga--r001130s50.csv
+/msvc/COM54_190510_181509_kml.kml
+/msvc/COM54_190510_181509_gga.gga
+/msvc/COM54_190510_181509_gga--r001130s15.csv
+/msvc/COM54_190510_175826_kml.kml
+/msvc/COM54_190510_175826_gga.gga
+/msvc/COM54_190510_175826_gga--r001130r59.csv
+/msvc/r001130s50.kml
+/msvc/r001130s50.gga
+/msvc/r001130s50.csv
+/msvc/r001130s15.kml
+/msvc/r001130s15.gga
+/msvc/r001130s15.csv
+/msvc/r001130r59.kml
+/msvc/r001130r59.gga
+/msvc/r001130r59.csv
+/msvc/r001130s36.kml
+/msvc/r001130s36.gga
+/msvc/r001130s36.csv
+/msvc/r001130s24.kml
+/msvc/r001130s24.gga
+/msvc/r001130s24.csv
+/msvc/COM54_190510_183550_kml.kml
+/msvc/COM54_190510_183550_gga.gga
+/msvc/COM54_190510_183550_gga--r001130s36.csv
+/msvc/COM54_190510_182334_kml.kml
+/msvc/COM54_190510_182334_gga.gga
+/msvc/COM54_190510_182334_gga--r001130s24.csv
+/msvc/COM54_190510_183550_ggax.gga
+/msvc/COM54_190510_183550_gga--r001130s36x.csv
+/msvc/COM54_190510_182334_gga--r001130s24x.csv
+/msvc/rtk_loop2.out
+/msvc/rtk_loop.out
+/msvc/rtk1.out
+/msvc/r001130s24x.csv
+/msvc/r001130s56.kml
+/msvc/r001130s56.gga
+/msvc/r001130s56.csv
+/msvc/COM54_190510_185606_kml.kml
+/msvc/COM54_190510_185606_gga.gga
+/msvc/COM54_190510_185606_gga--r001130s56.csv
+/msvc/COM54_190510_174557_kml.kml
+/msvc/COM54_190510_174557_gga.gga
+/msvc/COM54_190510_174557_gga--r001130r44.csv
+/msvc/r001130r44.kml
+/msvc/r001130r44.gga
+/msvc/r001130r44.csv
+/OpenRtkBootload/MDK-ARM/OpenRtkBootLoad.uvoptx
+/OpenRtkBootload/MDK-ARM/OpenRtkBootLoad.uvprojx

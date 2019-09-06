@@ -1,0 +1,7 @@
+---- set_ble_new_write_handle Matches (6 in 4 files) ----
+esp_spp_cb in esp_bt_main.c (C:\esp32\rtk_esp_bt_app\main) : 	set_ble_new_write_handle(&bt_spp_s,param);
+esp_bt_gap_cb in esp_bt_main.c (C:\esp32\rtk_esp_bt_app\main) : 	set_ble_new_write_handle(&bt_spp_s,param);
+esp_spp_cb in esp_bt_main.c (C:\esp32\rtk_esp_bt_app\main\bak) : 	set_ble_new_write_handle(&bt_spp_s,param);
+esp_bt_gap_cb in esp_bt_main.c (C:\esp32\rtk_esp_bt_app\main\bak) : 	set_ble_new_write_handle(&bt_spp_s,param);
+rtk_bt.c (C:\esp32\rtk_esp_bt_app\aceinna_app\src\bsp) line 185 : void set_ble_new_write_handle(esp_spp_cb_param_t* des,esp_spp_cb_param_t* src)
+rtk_bt.h (C:\esp32\rtk_esp_bt_app\aceinna_app\inc\bsp) line 58 : void set_ble_new_write_handle(esp_spp_cb_param_t* des,esp_spp_cb_param_t* src);

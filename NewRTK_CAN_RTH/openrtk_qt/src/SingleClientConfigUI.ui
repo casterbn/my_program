@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SingleClientConfigUI</class>
+ <widget class="QWidget" name="SingleClientConfigUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>218</width>
+    <height>172</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SingleClientConfigUI</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QCheckBox" name="m_checkBoxStream">
+     <property name="text">
+      <string>(1)Rover</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="m_comboBoxType">
+     <property name="editable">
+      <bool>false</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>NTRIP Client</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="m_comboBoxHost">
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>104.42.214.164</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="m_lineEditPort">
+     <property name="text">
+      <string>2101</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="m_comboBoxMountpoint">
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>SF01</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SF02</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SF03</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>WX03</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>WX04</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>CLK93</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>JPL_SSR</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>BRDC</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="m_lineEditUser"/>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="m_lineEditPassword"/>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

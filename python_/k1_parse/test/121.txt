@@ -1,0 +1,1 @@
+timer,tow,lla0,lla1,lla2,vel_ned0,vel_ned1,vel_ned2,hhva0,hhva1,hhva2,hhva3,acc0,acc1,acc2,rate0,rate1,rate2,quality0,quality1,quality2,

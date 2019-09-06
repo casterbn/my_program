@@ -1,0 +1,3 @@
+添加新的环境变量 $env:VS90COMNTOOLS="D:\soft\vs\Common7\Tools"
+
+[environment]::SetEnvironmentvariable("VS90COMNTOOLS", "D:\soft\vs\Common7\Tools", "daichenghe")

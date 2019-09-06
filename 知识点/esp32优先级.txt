@@ -1,0 +1,8 @@
+ESP_TASK_MAIN_PRIO  看门狗等优先级为 (ESP_TASK_PRIO_MIN + 1)
+
+ESP_TASK_PRIO_MIN 为 1
+
+tskIDLE_PRIORITY	优先级0
+
+
+如何关闭任务看门狗？

@@ -1,0 +1,11 @@
+{
+	"name": "openimu-platform-library",
+ 	"version": "1.0.2",
+ 	"description": "Open Source Embedded IMU and Navigation Library",
+ 	"build": {
+ 		"flags": [
+			"-I include",
+			"-I ."
+ 		]
+ 	}
+ }

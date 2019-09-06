@@ -1,0 +1,21 @@
+menu "RTK_COMP"
+#config RTK_COMP_ENABLE
+#bool "Enable rtk_comp"
+#default "y"
+#help
+#    config RTk
+	
+config SRC_ENABLE
+bool "Enable src"
+default "y"
+help
+    config src	
+
+
+config INC_ENABLE
+bool "Enable inc"
+default "y"
+help
+    config inc	
+endmenu
+
