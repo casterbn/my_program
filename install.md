@@ -38,7 +38,8 @@ To install OpenIMU development platform:
     bring up Aceinna OpenIMU platform homepage. Click on "Custom IMU examples", chose  
     desired example and click "Import".  
 </center>
-![未找到图片](media/HomePage.png)  
+
+![未找到图片](media/HomePage.png)   
 
     The required example will be imported into working directory in folder:   
 <center>              
@@ -104,6 +105,7 @@ To install OpenIMU development platform:
     to fully discuss all of the IDE's powerful  features in depth. For more information on PlatformIO  
     builder and IDE features include command line  interface, scripting and more please see the   
 </center>   
+
 [PlatformIO](https://docs.platformio.org)  
 
 #### **5.  ST-LINK Install for Ubuntu (Manual Version)**  
