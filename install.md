@@ -50,9 +50,9 @@ To install OpenIMU development platform:
     Next time when you return to development - open Aceinna "Home" page and click "Open Project", choose
     "Projects" and select  
     required project from the list.  
-
+</center>    
     The source tree of imported project tree has the following structure:  
-</center>
+
 
 
 ```
@@ -115,15 +115,15 @@ To install OpenIMU development platform:
     On local Ubuntu machine, you will clone the aforementioned repository and make the project.  
     This requires the following packages to be installed:   
    
-* CMake > v2.8.7  
-* Gcc compiler  
-* Libusb v1.0  
+*     CMake > v2.8.7  
+*     Gcc compiler  
+*     Libusb v1.0  
 
 ```  
-        # Run from source directory stlink/  
-        $make release  
-        $cd build/Release  
-        $sudo make install  
-        # Plug ST-LINK/V2 into USB, and check the device is present  
-        $ls /dev/stlink-v2  
+    # Run from source directory stlink/  
+    $make release  
+    $cd build/Release  
+    $sudo make install  
+    # Plug ST-LINK/V2 into USB, and check the device is present  
+    $ls /dev/stlink-v2  
 ```
