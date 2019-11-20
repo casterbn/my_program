@@ -118,7 +118,9 @@ To install OpenIMU development platform:
 *     CMake > v2.8.7  
 *     Gcc compiler  
 *     Libusb v1.0  
-
+      - CMake > v2.8.7  
+      - Gcc compiler  
+      - Libusb v1.0  
 ```  
     # Run from source directory stlink/  
     $make release  
