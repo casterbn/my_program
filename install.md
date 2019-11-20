@@ -111,7 +111,7 @@ To install OpenIMU development platform:
 #### **5.  ST-LINK Install for Ubuntu (Manual Version)**  
 <center>
     Go to https://github.com/texane/stlink and read instructions carefully.    
-
+  
     On local Ubuntu machine, you will clone the aforementioned repository and make the project.  
     This requires the following packages to be installed:   
 </center>  
