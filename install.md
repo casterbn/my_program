@@ -34,16 +34,16 @@ To install OpenIMU development platform:
 
 #### **First steps**   
 <center>  
-    After installation of "Aceinna" extension click on "Home" icon at the bottom of the screen. It will  
-    bring up Aceinna OpenIMU platform homepage. Click on "Custom IMU examples", chose  
-    desired example and click "Import".  
+    &emsp After installation of "Aceinna" extension click on "Home" icon at the bottom of the screen. It will  
+    &emsp bring up Aceinna OpenIMU platform homepage. Click on "Custom IMU examples", chose  
+    &emsp desired example and click "Import".  
 </center>  
 
 ![未找到图片](media/HomePage.png)   
 
-    The required example will be imported into working directory in folder:   
+  The required example will be imported into working directory in folder:   
             
-    C:\\Users\\<username>\\Documents\\platformio\\Projects\\ProjectName   
+  C:\\Users\\<username>\\Documents\\platformio\\Projects\\ProjectName   
 <center>  
     Now you can edit, build and test the project. All your changes will remain in the above-mentioned
     directory and subdirectories.  
@@ -108,11 +108,13 @@ To install OpenIMU development platform:
 
 [PlatformIO](https://docs.platformio.org)  
 
-#### **5.  ST-LINK Install for Ubuntu (Manual Version)**   
-  Go to https://github.com/texane/stlink and read instructions carefully.    
+#### **5.  ST-LINK Install for Ubuntu (Manual Version)**  
   
-  On local Ubuntu machine, you will clone the aforementioned repository and make the project.  
-  This requires the following packages to be installed:   
+    Go to https://github.com/texane/stlink and read instructions carefully.    
+  
+    On local Ubuntu machine, you will clone the aforementioned repository and make the project.  
+    This requires the following packages to be installed:   
+   
 * CMake > v2.8.7  
 * Gcc compiler  
 * Libusb v1.0  
