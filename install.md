@@ -55,7 +55,7 @@ To install OpenIMU development platform:
 </center>
 
 
-
+```
         project directory -|
                            |
                            |                                   
@@ -87,7 +87,7 @@ To install OpenIMU development platform:
                            |
                            |--src (user source files tree)
                            |
-
+```
 
     
     
