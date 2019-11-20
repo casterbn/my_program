@@ -109,12 +109,10 @@ To install OpenIMU development platform:
 [PlatformIO](https://docs.platformio.org)  
 
 #### **5.  ST-LINK Install for Ubuntu (Manual Version)**  
-<center>
     Go to https://github.com/texane/stlink and read instructions carefully.    
   
     On local Ubuntu machine, you will clone the aforementioned repository and make the project.  
     This requires the following packages to be installed:   
-</center>  
 * CMake > v2.8.7  
 * Gcc compiler  
 * Libusb v1.0  
