@@ -39,6 +39,7 @@ To install OpenIMU development platform:
     desired example and click "Import".  
 
     ![未找到图片](media/HomePage.png)  
+    ![未找到图片](media/AddExtension.png)  
     The required example will be imported into working directory in folder:  
 
     C:\\Users\\<username>\\Documents\\platformio\\Projects\\ProjectName  
