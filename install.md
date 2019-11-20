@@ -115,12 +115,12 @@ To install OpenIMU development platform:
     On local Ubuntu machine, you will clone the aforementioned repository and make the project.  
     This requires the following packages to be installed:   
    
-*     CMake > v2.8.7  
-*     Gcc compiler  
-*     Libusb v1.0  
-      - CMake > v2.8.7  
-      - Gcc compiler  
-      - Libusb v1.0  
+- CMake > v2.8.7  
+- Gcc compiler  
+- Libusb v1.0  
+
+ 
+
 ```  
     # Run from source directory stlink/  
     $make release  
