@@ -33,10 +33,10 @@ To install OpenIMU development platform:
 
 
 #### **First steps**   
- 
-    &emsp After installation of "Aceinna" extension click on "Home" icon at the bottom of the screen. It will  
-    &emsp bring up Aceinna OpenIMU platform homepage. Click on "Custom IMU examples", chose  
-    &emsp desired example and click "Import".  
+
+    After installation of "Aceinna" extension click on "Home" icon at the bottom of the screen. It will  
+    bring up Aceinna OpenIMU platform homepage. Click on "Custom IMU examples", chose  
+    desired example and click "Import".  
 
 
 ![未找到图片](media/HomePage.png)   
