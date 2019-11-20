@@ -119,11 +119,11 @@ To install OpenIMU development platform:
 * Gcc compiler  
 * Libusb v1.0  
 
-        ```  
+```  
         # Run from source directory stlink/  
         $make release  
         $cd build/Release  
         $sudo make install  
         # Plug ST-LINK/V2 into USB, and check the device is present  
         $ls /dev/stlink-v2  
-        ```
+```
