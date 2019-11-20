@@ -93,21 +93,24 @@ To install OpenIMU development platform:
     shown below.  To load an application to the OpenIMU with JTAG,simply click  
     the Install/Download button while the ST-LINK is connected to your EVB.
 
-    <img src="media/VSCodeToolBar.png" height = "200" >
+<img src="media/VSCodeToolBar.png" height = "200" >
 
-    The OpenIMU development environment uses PlatformIO's powerful open-source builder and IDE.  This on-line  manual focuses on
-    on OpenIMU specific information, and it does not attempt to fully discuss all of the IDE's powerful  features in depth. For more information on PlatformIO builder and IDE features include command line  interface, scripting and more please see the  
+    The OpenIMU development environment uses PlatformIO's powerful open-source builder and 
+    IDE.This on-line  manual focuses on on OpenIMU specific information, and it does not attempt  
+    to fully discuss all of the IDE's powerful  features in depth. For more information on PlatformIO  
+    builder and IDE features include command line  interface, scripting and more please see the  
 [PlatformIO](https://docs.platformio.org)  
 
 #### **5.  ST-LINK Install for Ubuntu (Manual Version)**  
 
-    Go to [https://github.com/texane/stlink](https://github.com/texane/stlink) and read instructions carefully.  
+    Go to https://github.com/texane/stlink and read instructions carefully.  
 
-    On local Ubuntu machine, you will clone the aforementioned repository and make the project.  This requires the following packages to be installed:   
+    On local Ubuntu machine, you will clone the aforementioned repository and make the project.  
+    This requires the following packages to be installed:   
 
--         CMake > v2.8.7  
--         Gcc compiler  
--         Libusb v1.0  
+*         CMake > v2.8.7  
+*         Gcc compiler  
+*         Libusb v1.0  
 
 ```   
         # Run from source directory stlink/  
