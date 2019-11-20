@@ -39,13 +39,15 @@ To install OpenIMU development platform:
     desired example and click "Import".  
 </center>
 ![未找到图片](media/HomePage.png)  
-<center>
+
     The required example will be imported into working directory in folder:   
-              
+<center>              
     C:\\Users\\<username>\\Documents\\platformio\\Projects\\ProjectName   
-        
-    Now you can edit, build and test the project. All your changes will remain in the above-mentioned  directory and subdirectories.  
-    Next time when you return to development - open Aceinna "Home" page and click "Open Project", choose   "Projects" and select  
+
+    Now you can edit, build and test the project. All your changes will remain in the above-mentioned
+    directory and subdirectories.  
+    Next time when you return to development - open Aceinna "Home" page and click "Open Project", choose
+    "Projects" and select  
     required project from the list.  
 
     The source tree of imported project tree has the following structure:  
