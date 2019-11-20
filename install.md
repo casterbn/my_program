@@ -33,11 +33,13 @@ To install OpenIMU development platform:
 
 
 #### **First steps**   
+<center>
     After installation of "Aceinna" extension click on "Home" icon at the bottom of the screen. It will  
     bring up Aceinna OpenIMU platform homepage. Click on "Custom IMU examples", chose  
     desired example and click "Import".  
-
+</center>
 ![未找到图片](media/HomePage.png)  
+<center>
     The required example will be imported into working directory in folder:  
 
     C:\\Users\\<username>\\Documents\\platformio\\Projects\\ProjectName  
@@ -47,7 +49,7 @@ To install OpenIMU development platform:
     required project from the list.  
 
     The source tree of imported project tree has the following structure:  
-
+</center>
 ```   
 
 
@@ -84,31 +86,32 @@ To install OpenIMU development platform:
                            |
 
 
-```   
+``` 
 
-####    **Compile and JTAG Code Loading**
-<right>
+
+####    **Compile and JTAG Code Loading**   
+<center>  
     Once you have imported an example project, a good first step is to compile and download this  
     application using your ST-LINK.At the bottom of the VS Code window is the shortcut toolbar  
     shown below.  To load an application to the OpenIMU with JTAG,simply click  
     the Install/Download button while the ST-LINK is connected to your EVB.  
-</right>
-<img src="media/VSCodeToolBar.png" height = "200" >
-<center>
+</center>  
+<img src="media/VSCodeToolBar.png" height = "200" >  
+<center>  
     The OpenIMU development environment uses PlatformIO's powerful open-source builder and  
     IDE.This on-line  manual focuses on on OpenIMU specific information, and it does not attempt  
     to fully discuss all of the IDE's powerful  features in depth. For more information on PlatformIO  
-    builder and IDE features include command line  interface, scripting and more please see the  
-<center>
+    builder and IDE features include command line  interface, scripting and more please see the   
+</center>   
 [PlatformIO](https://docs.platformio.org)  
 
 #### **5.  ST-LINK Install for Ubuntu (Manual Version)**  
-
+<center>
     Go to https://github.com/texane/stlink and read instructions carefully.  
 
     On local Ubuntu machine, you will clone the aforementioned repository and make the project.  
     This requires the following packages to be installed:   
-
+</center>
 * CMake > v2.8.7  
 * Gcc compiler  
 * Libusb v1.0  
