@@ -40,17 +40,17 @@ To install OpenIMU development platform:
 </center>
 ![未找到图片](media/HomePage.png)  
 <center>
-    The required example will be imported into working directory in folder:  
-
-    C:\\Users\\<username>\\Documents\\platformio\\Projects\\ProjectName  
-
+    The required example will be imported into working directory in folder:   
+              
+    C:\\Users\\<username>\\Documents\\platformio\\Projects\\ProjectName   
+        
     Now you can edit, build and test the project. All your changes will remain in the above-mentioned  directory and subdirectories.  
     Next time when you return to development - open Aceinna "Home" page and click "Open Project", choose   "Projects" and select  
     required project from the list.  
 
     The source tree of imported project tree has the following structure:  
 </center>
-```   
+(```)  
 
 
         project directory -|
@@ -85,8 +85,7 @@ To install OpenIMU development platform:
                            |--src (user source files tree)
                            |
 
-
-``` 
+(```) 
 
 
 ####    **Compile and JTAG Code Loading**   
@@ -116,11 +115,11 @@ To install OpenIMU development platform:
 * Gcc compiler  
 * Libusb v1.0  
 
-```   
+(```)  
         # Run from source directory stlink/  
         $make release  
         $cd build/Release  
         $sudo make install  
         # Plug ST-LINK/V2 into USB, and check the device is present  
         $ls /dev/stlink-v2  
-```   
+(```) 
