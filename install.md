@@ -29,7 +29,7 @@ To install OpenIMU development platform:
 2. On leftmost toolbar find "Extensions" icon and click on it.
 3. In the text box "Search extensions on Marketplace" type "Aceinna" and hit enter
 4. Install Aceinna Extension and Follow prompts.
-    ![未找到图片](media/AddExtension.png)  
+    ![未找到图片](media/AddExtension.png)   
 
 
 #### **First steps**   
@@ -87,12 +87,12 @@ To install OpenIMU development platform:
 ```   
 
 ####    **Compile and JTAG Code Loading**
-<center>
+<right>
     Once you have imported an example project, a good first step is to compile and download this  
     application using your ST-LINK.At the bottom of the VS Code window is the shortcut toolbar  
     shown below.  To load an application to the OpenIMU with JTAG,simply click  
     the Install/Download button while the ST-LINK is connected to your EVB.  
-</center>
+</right>
 <img src="media/VSCodeToolBar.png" height = "200" >
 <center>
     The OpenIMU development environment uses PlatformIO's powerful open-source builder and  
