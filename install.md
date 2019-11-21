@@ -102,12 +102,12 @@ To install OpenIMU development platform:
     The OpenIMU development environment uses PlatformIO's powerful open-source builder and  
     IDE.This on-line  manual focuses on on OpenIMU specific information, and it does not attempt  
     to fully discuss all of the IDE's powerful  features in depth. For more information on PlatformIO  
-    builder and IDE features include command line  interface, scripting and more please see the   
+    builder and IDE features include command line interface, scripting and more please see the:   
 </center>   
 
 [PlatformIO](https://docs.platformio.org)  
 
-<div id="step_5"></div>
+<div id="step_5"></div>  
 #### **5.  ST-LINK Install for Ubuntu (Manual Version)**  
   
   Go to https://github.com/texane/stlink and read instructions carefully.    
