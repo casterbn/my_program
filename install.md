@@ -19,7 +19,7 @@ Visual Studio Code - can be downloaded from here:  https://code.visualstudio.com
 -   *MacOS* - ST-LINK drivers are automatically installed for MAC OS.
 -   *Windows* - ST-LINK drivers should be also installed automatically. But in case if it was not - ST-LINK V2 driver can be manually installed for Windows.  The Windows driver is downloaded from the following page link:
     http://www.st.com/en/development-tools/st-link-v2.html
--   *Ubuntu* - please see step 5. <a href="step_5">链接</a>
+-   *Ubuntu* - please see step 5. <a href=step_5>链接</a>
 
 #### **Installation of OpenIMU development platform**
 
