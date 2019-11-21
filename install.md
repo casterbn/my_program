@@ -19,8 +19,8 @@ Visual Studio Code - can be downloaded from here:  https://code.visualstudio.com
 -   *MacOS* - ST-LINK drivers are automatically installed for MAC OS.
 -   *Windows* - ST-LINK drivers should be also installed automatically. But in case if it was not - ST-LINK V2 driver can be manually installed for Windows.  The Windows driver is downloaded from the following page link:
     http://www.st.com/en/development-tools/st-link-v2.html
--   *Ubuntu* <a href="#step_5">- please see step 5.</a>
-<p style="color:red">注意</p>
+-   *Ubuntu* -<a href="#step_5"> please see step 5.</a>
+
 #### **Installation of OpenIMU development platform**
 
 To install OpenIMU development platform:
@@ -34,8 +34,7 @@ To install OpenIMU development platform:
 
 #### **First steps**   
 
-    After installation of "Aceinna" extension click on "Home" icon at the bottom of the screen. It will  
-    bring up Aceinna OpenIMU platform homepage. Click on "Custom IMU examples", chose  
+    After installation of "Aceinna" extension click on "Home" icon at the bottom of the screen. It will bring up Aceinna OpenIMU platform homepage. Click on "Custom IMU examples", chose
     desired example and click "Import".  
 
 
