@@ -6,7 +6,7 @@ ESP-IDF (Espressif IoT Development Framework)是乐鑫ESP32开发的一套框架
 ## **二. 下载并安装vscode**
 配置文件settings.json中添加(根据esp-idf实际路径设置):    
 '''
-"terminal.integrated.shell.windows": "C:\\msys32\\msys2_shell.cmd",
+"terminal.integrated.shell.windows": "C:\\msys32\\msys2_shell.cmd",    
 "terminal.integrated.shellArgs.windows": ["-defterm", "-mingw32", "-no-start", "-here"]
 '''
 
