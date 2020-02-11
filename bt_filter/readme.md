@@ -12,6 +12,6 @@ ESP-IDF (Espressif IoT Development Framework)是乐鑫ESP32开发的一套框架
 
 ##  **三. vscode中打开esp32中断，输入make help查询编译指令。**
 
-![未找到图片](/media/make_cmd.png)
+![未找到图片](media/make_cmd.png)
 
 
